@@ -90,3 +90,65 @@ function bmi(weight, height) {
       return "Obese"
     }
   }
+
+
+//#6 Description
+//Write a function which converts the input string to uppercase.
+
+//My Solution
+function makeUpperCase(str) {
+  return str.toUpperCase()
+}
+
+
+//#7 Description
+//This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+//My Solution
+function simpleMultiplication(number) {
+  if(number % 2 === 0) {
+    return number * 8
+  }else {
+    return number * 9
+  }
+}
+
+
+//#8 Description
+//Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+//My Solution
+function boolToWord( bool ){
+  return bool ? "Yes" : "No"
+}
+
+
+//#9 Description
+/*Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+Create a function which translates a given DNA string into RNA.*/
+
+//My Solution
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U')
+}
+
+
+//#10 Description
+//Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
+
+//My Solution
+function getGrade (s1, s2, s3) {
+  let grade = (s1 + s2 + s3)/3
+  if(grade >= 90) {
+    return 'A'
+  }else if(grade >= 80 && grade < 90) {
+    return 'B'
+  }else if(grade >= 70 && grade < 80) {
+    return 'C'
+  }else if(grade >= 60 && grade <70) {
+    return 'D'
+  }else{
+    return 'F'
+  }
+}
