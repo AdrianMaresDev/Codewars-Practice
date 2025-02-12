@@ -1,0 +1,13 @@
+//Description
+//Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+//My Solution
+function solution(str, ending){
+    const startIndex = str.length - ending.length;
+    if (startIndex < 0 ) {
+      return false
+    } 
+    
+    const extracted = str.slice(startIndex)
+    return extracted === ending
+  }
